@@ -1,12 +1,17 @@
 # ama loop lagava nu karan 3 var puchi sarkiye aek var ni badle .
 from openai import OpenAI
+from dotenv import load_dotenv       #.env file માંથી environment variables load કરવા
+
+import os
+
+load_dotenv()
 
 # chatgpt na version che token upar use thay.
-api_key="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" 
+
 
 #OpenAI ae library client ma store karavi .
 client = OpenAI(
-    api_key = api_key
+      api_key=os.getenv('OPENAI_API_KEY') 
 )
 
 #system according answer avse input leta  matlab pela sysetm ma code nakhyo atle .
