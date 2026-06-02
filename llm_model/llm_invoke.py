@@ -1,4 +1,3 @@
-
 from langchain_openai import ChatOpenAI                 #langchain ae frame work che
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
